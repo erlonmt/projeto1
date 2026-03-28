@@ -1,25 +1,31 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Projeto 1 - Mobile
+      <span style="letter-spacing:2px; font-weight:bold;">Projeto 1 - Mobile</span>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Projeto 1 - Mobile</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-content>
-    <div class="center">
-      <ion-button id="button-alert">Alerta</ion-button>
-      <ion-alert
-        trigger="button-alert"
-        header="Alerta"
-        message="Erlon Matheus - 01797598">
-      </ion-alert>
-    </div>
-  </ion-content>
+<ion-content [fullscreen]="true" 
+  style="background: linear-gradient(135deg, #bbf0ff 0%, #fcd97b 100%);
+         min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <ion-button id="button-alert" expand="block" color="primary" style="
+    box-shadow: 0 2px 14px #70d9ff38;
+    border-radius: 16px;
+    font-size:1.11rem;
+    letter-spacing:1px;
+    font-weight:600;
+    margin: auto;
+    margin-top: 40vh;
+    width: 220px;
+  ">
+    <ion-icon name="alert-circle" slot="start" style="font-size:1.4rem;"></ion-icon>
+    Alerta
+  </ion-button>
+  <ion-alert
+    trigger="button-alert"
+    header="Alerta"
+    message="Erlon Matheus RA: 01797598"
+    style="border-radius: 18px;">
+  </ion-alert>
+</ion-content>
